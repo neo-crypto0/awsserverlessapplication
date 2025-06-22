@@ -1,9 +1,9 @@
 //add your api here below
-var API_ENDPOINT = "https://n8tpg0m4lk.execute-api.us-east-1.amazonaws.com/stage1"
+var API_ENDPOINT = "https://n8tpg0m4lk.execute-api.us-east-1.amazonaws.com/stage1";
 
 $(document).ready(function() {
   // Call the function to retrieve employees
-  getEmployees();
+  getemployees();
 });
 //AJAX POST REQUEST
 document.getElementById("createEmployeeForm").onsubmit = function(event) {
@@ -26,7 +26,7 @@ document.getElementById("createEmployeeForm").onsubmit = function(event) {
       alert("success");
 
       // Call the function to retrieve employees
-      getEmployees();
+      getemployees();
     },
     error: function() {
       alert("error");
@@ -35,7 +35,7 @@ document.getElementById("createEmployeeForm").onsubmit = function(event) {
 };
 
 //AJAX DELETE REQUEST
-function deleteEmployee(employeeId) {
+function deleteemployee(employeeId) {
   var requestBody = {
     "employeeid": employeeId.toString()
   };
@@ -60,7 +60,7 @@ document.getElementById("getEmployees").onclick = function() {
   getEmployees();
 };
 
-function getEmployees() {
+function getemployees() {
   $.ajax({
     url: API_ENDPOINT,
     type: 'GET',
