@@ -10,7 +10,7 @@ $(document).ready(function() {
 document.getElementById("createEmployeeForm").onsubmit = function(event) {
   event.preventDefault(); // Pour empêcher le formulaire de se soumettre normalement
   var inputData = {
-    "employeeId": $('#id').val(),
+    "employeeid": $('#id').val(),
     "name": $('#name').val(),
     "email": $('#email').val(),
     "address": $('#address').val(),
