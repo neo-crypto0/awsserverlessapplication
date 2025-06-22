@@ -1,15 +1,16 @@
 //add your api here below
 var API_ENDPOINT = "https://n8tpg0m4lk.execute-api.us-east-1.amazonaws.com/stage1";
 
+
 $(document).ready(function() {
   // Call the function to retrieve employees
-  getemployees();
+  getEmployees();
 });
 //AJAX POST REQUEST
 document.getElementById("createEmployeeForm").onsubmit = function(event) {
   event.preventDefault(); // Pour empêcher le formulaire de se soumettre normalement
   var inputData = {
-    "employeeid": $('#id').val(),
+    "employeeId": $('#id').val(),
     "name": $('#name').val(),
     "email": $('#email').val(),
     "address": $('#address').val(),
@@ -26,7 +27,7 @@ document.getElementById("createEmployeeForm").onsubmit = function(event) {
       alert("success");
 
       // Call the function to retrieve employees
-      getemployees();
+      getEmployees();
     },
     error: function() {
       alert("error");
@@ -35,9 +36,9 @@ document.getElementById("createEmployeeForm").onsubmit = function(event) {
 };
 
 //AJAX DELETE REQUEST
-function deleteemployee(employeeId) {
+function deleteEmployee(employeeId) {
   var requestBody = {
-    "employeeid": employeeId.toString()
+    "employeeId": employeeId.toString()
   };
   $.ajax({
     url: API_ENDPOINT,
@@ -47,7 +48,7 @@ function deleteemployee(employeeId) {
     success: function(response) {
       alert("Employee deleted successfully");
       // Call the function to retrieve employees
-      getemployees();
+      getEmployees();
     },
     error: function() {
       alert("Error deleting employee");
@@ -56,11 +57,11 @@ function deleteemployee(employeeId) {
 }
 
 //AJAX GET REQUEST
-document.getElementById("getemployees").onclick = function() {
-  getemployees();
+document.getElementById("getEmployees").onclick = function() {
+  getEmployees();
 };
 
-function getemployees() {
+function getEmployees() {
   $.ajax({
     url: API_ENDPOINT,
     type: 'GET',
