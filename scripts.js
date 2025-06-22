@@ -47,7 +47,7 @@ function deleteemployee(employeeId) {
     success: function(response) {
       alert("Employee deleted successfully");
       // Call the function to retrieve employees
-      getEmployees();
+      getemployees();
     },
     error: function() {
       alert("Error deleting employee");
@@ -56,8 +56,8 @@ function deleteemployee(employeeId) {
 }
 
 //AJAX GET REQUEST
-document.getElementById("getEmployees").onclick = function() {
-  getEmployees();
+document.getElementById("getemployees").onclick = function() {
+  getemployees();
 };
 
 function getemployees() {
