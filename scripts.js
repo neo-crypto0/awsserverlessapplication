@@ -76,7 +76,9 @@ function getEmployees() {
           <td>" + data['address'] + "</td>\
           <td>" + data['phone'] + "</td>\
           <td>\
-            <a href='#' class='delete' data-toggle='modal' onclick='deleteEmployee(" + data['employeeid'] + ")'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a>\
+            <a href='#' class='delete' data-toggle='modal' data-target='#deleteEmployeeModal' data-id='" + data['employeeid'] + "'>\
+              <i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i>\
+            </a>\
           </td>\
         </tr>";
         $("#EmployeesTable").append(row);
