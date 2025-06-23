@@ -38,7 +38,7 @@ document.getElementById("createEmployeeForm").onsubmit = function(event) {
 //AJAX DELETE REQUEST
 function deleteEmployee(employeeId) {
   var requestBody = {
-    "employeeId": employeeId.toString()
+    "employeeid": employeeId.toString()
   };
   $.ajax({
     url: API_ENDPOINT,
@@ -70,7 +70,7 @@ function getEmployees() {
       $('#EmployeesTable tr').slice(1).remove();
       jQuery.each(response, function(i, data) {
         var row = "<tr> \
-          <td>" + data['employeeId'] + "</td>\
+          <td>" + data['employeeid'] + "</td>\
           <td>" + data['name'] + "</td>\
           <td>" + data['email'] + "</td>\
           <td>" + data['address'] + "</td>\
