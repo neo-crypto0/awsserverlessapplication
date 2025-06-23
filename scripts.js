@@ -76,7 +76,7 @@ function getEmployees() {
           <td>" + data['address'] + "</td>\
           <td>" + data['phone'] + "</td>\
           <td>\
-            <a href='#' class='delete' data-toggle='modal' onclick='deleteEmployee(" + data['employeeId'] + ")'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a>\
+            <a href='#' class='delete' data-toggle='modal' onclick='deleteEmployee(" + data['employeeid'] + ")'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a>\
           </td>\
         </tr>";
         $("#EmployeesTable").append(row);
@@ -87,3 +87,14 @@ function getEmployees() {
     }
   });
 }
+
+$(document).on('click', 'a.delete', function() {
+  var employeeId = $(this).data('id');
+  $('#deleteEmployeeModal').data('employeeid', employeeId);
+});
+
+$('#deleteEmployeeModal .btn-danger').click(function() {
+  var employeeId = $('#deleteEmployeeModal').data('employeeid');
+  deleteEmployee(employeeId);
+  $('#deleteEmployeeModal').modal('hide');
+});
