@@ -12,7 +12,7 @@ This repository contains a serverless application on AWS that performs CRUD (Cre
 
 ### 🧱 Architecture Overview
 
-![architecture](https://github.com/user-attachments/assets/1ba08e7e-2194-4f5e-9f5a-79a3474dd500)
+![image](https://github.com/user-attachments/assets/65fffe4a-c05a-4245-8aa1-d40d33cdbc97)
 
 	• Frontend: HTML/JS static site hosted on Amazon S3
 	• Backend: Python-based Lambda functions
