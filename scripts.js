@@ -1,5 +1,5 @@
 //add your api here below
-var API_ENDPOINT = "https://n8tpg0m4lk.execute-api.us-east-1.amazonaws.com/stage1";
+var API_ENDPOINT = "https://onjgpmof7g.execute-api.us-east-1.amazonaws.com/dev/";
 
 
 $(document).ready(function() {

@@ -1,0 +1,18 @@
+# Terraform state
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform._cf.json
+
+# Lambda build artifacts
+lambda/*.zip
+lambda/__pycache__/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
