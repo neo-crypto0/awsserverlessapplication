@@ -1,14 +1,33 @@
-## Serverless Web App on AWS – Lambda, S3, DynamoDB, API Gateway, CloudFront, WAF, CodePipeline, and CloudWatch
-This repository contains a serverless application on AWS that performs CRUD (Create, Read, Update, Delete) operations for managing employee records. The architecture implements a secure, scalable, and cost-effective solution using AWS managed services.
+## Serverless Web App on AWS – IAC with Terraform
+This repository contains a serverless application on AWS that performs CRUD (Create, Read, Update, Delete) operations for managing employee records. The architecture implements a secure, scalable, and cost-effective solution using AWS managed services.It  provisions a complete serverless architecture on AWS using **Terraform**
 
 ### 🔧 Features
-	• Serverless architecture built using AWS services
-	• Fully automated CI/CD with AWS CodePipeline
-	• Real-time application monitoring and logging using CloudWatch
-	• RESTful API for managing employees (Create, Read, Delete)
-	• Static frontend hosted via Amazon S3 + CloudFront CDN
-	• Backend logic implemented using AWS Lambda (Python)
-	• Secure with AWS WAF, IAM roles, and scoped permissions
+	
+	- Infrastructure as Code (IaC) using **Terraform**
+	- Serverless architecture built using AWS services
+	- Fully automated CI/CD with AWS CodePipeline
+	- Real-time application monitoring and logging using CloudWatch
+	- RESTful API for managing employees (Create, Read, Delete)
+	- Static frontend hosted via Amazon S3 + CloudFront CDN
+	- Backend logic implemented using AWS Lambda (Python)
+	- Secure with AWS WAF, IAM roles, and scoped permissions
+
+  ### ⚙️ Getting Started
+
+1. **Install Terraform**
+2. Clone this repository
+3. Initialize Terraform:
+```
+terraform init
+```  
+
+4. To provision
+```
+terraform apply
+```
+
+5.  Copy the invoke URL and update the value of API_ENDPOINT variable is script.js file.
+
 
 ### 🧱 Architecture Overview
 
