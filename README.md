@@ -80,6 +80,7 @@ terraform apply
 ![webacl](https://github.com/user-attachments/assets/12d7da62-b0f6-4ef5-b491-6a90e126a6ff)
 
 #### Application
-![application](https://github.com/user-attachments/assets/6c95740b-b391-4b0b-b3ff-b465fb7788f0)
+![image](https://github.com/user-attachments/assets/9777b4fb-00f0-4777-a9f8-4c1a87807fb0)
+
 
 
