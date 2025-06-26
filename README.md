@@ -1,6 +1,20 @@
 ## Serverless Web App on AWS – IAC with Terraform
 This repository contains a serverless application on AWS that performs CRUD (Create, Read, Update, Delete) operations for managing employee records. The architecture implements a secure, scalable, and cost-effective solution using AWS managed services.It  provisions a complete serverless architecture on AWS using **Terraform**
 Note: WAF and CodePipeline are not included in the Terraform scripts and need to be configured manually if required. The application functions correctly even without them.
+
+### 📝 Acknowledgements
+
+This project is originally based on the article ["AWS Serverless Web Application"](https://blog.numericaideas.com/aws-serverless-web-application) by **Kemane Donfack**.
+
+While the foundational structure comes from that guide, I have made significant changes, including:
+
+- Infrastructure provisioning using **Terraform**
+- Integration of **AWS CodePipeline** for CI/CD
+- Setup of **CloudWatch** for monitoring and logging
+- General improvements and restructuring of the application
+
+Credit to the original author for the excellent starting point.
+
 ### 🔧 Features
 	
 	- Infrastructure as Code (IaC) using **Terraform**
